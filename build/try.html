@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tech</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        /* Base Page Styles */
+        body {
+            background-color: #121214;
+            color: #E2E8F0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2, h3, p {
+            margin: 10px 0;
+        }
+
+        /* Image Grid Layout */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .image-gallery img {
+            width: 150px;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        /* Courses Table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            background-color: #1A1B1E;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        td {
+            border: 1px solid #2D2F31;
+            text-align: left;
+            padding: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        tr:nth-child(even) { 
+            background-color: #222326;
+        }
+
+        /* Value Proposition Banner Containers */
+        .mycontainer {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .mycontainer div {
+            flex: 1;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mycontainer h4 {
+            margin: 0;
+            font-size: 16px;
+            text-transform: uppercase;
+            line-height: 1.4;
+        }
+
+        /* Links and Divider */
+        a {
+            color: #40A9FF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #2D2F31;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+        }
+
+        /* Form Layout & Form Controls */
+        form {
+            background-color: #1A1B1E;
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+            border: 1px solid #2D2F31;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #A0AAB2;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #25262B;
+            border: 1px solid #3A3D42;
+            border-radius: 6px;
+            color: #FFFFFF;
+            font-size: 15px;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+        input:focus {
+            outline: none;
+            border-color: #40A9FF;
+        }
+        input::placeholder {
+            color: #626870;
+        }
+
+        /* Submit Button Styling */
+        button[type="submit"] {
+            width: 100%;
+            background-color: #40A9FF;
+            color: #121214;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+        button[type="submit"]:hover {
+            background-color: #00E5FF;
+        }
+        
+        .feedback-text {
+            font-size: 13px;
+            color: #A0AAB2;
+            text-align: center;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 style="color: #40A9FF; font-weight: 800; letter-spacing: 1px;">GLOBAL TECH</h1>
+    
+    <div class="image-gallery">
+        <img src="l.png" alt="Card L">
+        <img src="y.png" alt="Card Y">
+        <img src="c.png" alt="Card C">
+        <img src="e.png" alt="Card E">
+        <img src="f.png" alt="Card F">
+        <img src="g.png" alt="Card G">
+        <img src="h.png" alt="Card H">
+    </div>
+
+    <p style="text-align: center; max-width: 600px; color: #A0AAB2;">
+        Global Tech is one of the leading IT institutions in Nigeria. We offer a lot of IT courses such as:
+    </p>
+
+    <table>
+        <tr>
+            <td>SOFTWARE ENGINEERING</td>
+            <td>CYBER SECURITY</td>
+        </tr>
+        <tr>
+            <td>WEB DEVELOPMENT</td>
+            <td>PYTHON</td>
+        </tr>
+        <tr>
+            <td>DATA ANALYTICS</td>
+            <td>ROBOTICS</td>
+        </tr>
+        <tr>
+            <td>ANIMATION</td>
+            <td>ARTIFICIAL INTELLIGENCE</td>
+        </tr>
+    </table>
+
+    <div class="mycontainer">
+        <div style="color: #121214; background-color: #40A9FF;">
+            <h4>With days at Global Tech, you are a Tech Pro</h4>
+        </div>
+        <div style="color: #121214; background-color: #00E676;">
+            <h4>In a week, you are unstoppable</h4>
+        </div>
+        <div style="color: #121214; background-color: #00E5FF;">
+            <h4>In a couple of weeks, you lead the tech world</h4>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div style="margin-bottom: 20px; text-align: center;">
+        <a href="claude.html">FEES</a> | 
+        <a href="mailto:someone@example.com">LOCATION</a> | 
+        <span style="color: #A0AAB2; font-weight: bold;">COURSE CODE</span>
+    </div>
+
+    <h3 style="text-align: center; color: #7C4DFF; margin-bottom: 20px;">
+        PLEASE FILL IN THE FORM TO REGISTER TO GLOBAL TECH INC.
+    </h3>
+
+    <form onsubmit="onSubmit(event)">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Comments</label>
+            <input type="text" id="comments" name="comments" placeholder="Please comment">
+        </div>
+
+        <div class="form-group">
+            <label for="improvement">Was this helpful?</label>
+            <input type="text" id="improvement" name="improvement" placeholder="Please reply">
+        </div>
+
+        <button type="submit">Submit Registration</button>
+
+        <p class="feedback-text">
+            Your feedback helps us to improve our standard of services and to make sure we put you <em>first</em>.
+        </p>
+        <div style="text-align: center; margin-top: 15px;">
+            <a href="claude.html" style="font-size: 13px; color: #626870;">Terms of services</a>
+        </div>
+    </form>
+
+    <script>
+        async function onSubmit(event){
+            event.preventDefault();
+            try {
+                const username = document.getElementById("username").value;
+                const age = document.getElementById("age").value;
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+                const improvement = document.getElementById("improvement").value;
+                const comments = document.getElementById("comments").value;
+                
+                console.log({username, age, email, password, improvement, comments});
+                
+                const contents = { username, age, email, password, improvement, comments };
+                
+                const clientRequest = await fetch("http://localhost:3001/api/storeOneUser", {
+                    headers: {"Content-Type": "application/json"},
+                    method: "POST",
+                    body: JSON.stringify(contents)
+                });
+                
+                const response = await clientRequest.json();
+                alert(response.message);
+                console.log(response);
+            } catch(error) {
+                console.error(error);
+            }
+        }
+    </script>
+</body>
+</html>
